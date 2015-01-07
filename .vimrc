@@ -57,6 +57,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 	\ 'unix' : 'gmake',
 	\ },
 	\ }
+NeoBundle 'cocoa.vim'
 
 """ unite.vim
 " バッファ一覧
