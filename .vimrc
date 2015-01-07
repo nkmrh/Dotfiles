@@ -3,7 +3,13 @@ set nocompatible
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
-set paste
+set ic
+set hlsearch
+set tabstop=4
+set expandtab
+set showmatch
+set backupdir=$HOME/vim_backup
+let &directory=&backupdir
 syntax enable
 filetype plugin indent on
 
