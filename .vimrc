@@ -10,6 +10,11 @@ set expandtab
 set showmatch
 set backupdir=$HOME/vim_backup
 let &directory=&backupdir
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+hi Pmenu ctermbg=4
+hi PmenuSel ctermbg=1
+hi PMenuSbar ctermbg=4
 syntax enable
 filetype plugin indent on
 
