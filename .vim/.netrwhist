@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/hajime-nakamura/Git/ios-cookpad/Tsukuru/controller'
+let g:netrw_dirhist_2='/Users/hajime-nakamura/Git/ios-cookpad/Tsukuru'
+let g:netrw_dirhist_3='/Users/hajime-nakamura/Git/ios-cookpad/Tsukuru/controller'

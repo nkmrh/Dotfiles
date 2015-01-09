@@ -8,6 +8,9 @@ set hlsearch
 set tabstop=4
 set expandtab
 set showmatch
+set autoindent
+set shiftwidth=4
+set clipboard+=unnamed
 set backupdir=$HOME/vim_backup
 let &directory=&backupdir
 filetype plugin on
@@ -17,6 +20,11 @@ hi PmenuSel ctermbg=1
 hi PMenuSbar ctermbg=4
 syntax enable
 filetype plugin indent on
+
+" 削除キーでyankしない
+nnoremap x "_x
+nnoremap d "_d
+nnoremap D "_D
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
