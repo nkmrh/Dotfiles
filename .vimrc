@@ -1,5 +1,4 @@
 set number
-set nocompatible
 set enc=utf-8
 set fencs=utf-8
 set fileformats=unix,dos,mac
@@ -14,6 +13,8 @@ set clipboard+=unnamed
 set backupdir=$HOME/vim_backup
 let &directory=&backupdir
 set clipboard=unnamed
+set undofile
+set backspace=indent,eol,start
 
 hi Pmenu ctermbg=4
 hi PmenuSel ctermbg=1
@@ -33,11 +34,11 @@ if has('vim_starting')
   endif
 
   " Required:
-  set runtimepath+=/Users/haz/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/Users/haz/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -203,5 +204,9 @@ endif
 NeoBundle 'git://github.com/tokorom/clang_complete.git'
 NeoBundle 'git://github.com/tokorom/clang_complete-getopts-ios.git'
 let g:clang_complete_getopts_ios_default_options = '-fblocks -fobjc-arc -D __IPHONE_OS_VERSION_MIN_REQUIRED=40300'
-let g:clang_complete_getopts_ios_sdk_directory = '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk'
+let g:clang_complete_getopts_ios_sdk_directory = '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk'
 let g:clang_complete_getopts_ios_ignore_directories = ["^\.git", "\.xcodeproj"]
+let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+if isdirectory(s:clang_library_path)
+        let g:clang_library_path=s:clang_library_path
+endif
