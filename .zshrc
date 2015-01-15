@@ -89,3 +89,5 @@ eval "$(rbenv init - --no-rehash zsh)"
 export CPAD_INITIALIZED=1
 
 autossh -M 60559 -f -C awsproxy.vpc ping -i 30 localhost
+
+[[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
