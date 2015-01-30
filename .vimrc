@@ -16,6 +16,7 @@ let &directory=&backupdir
 set clipboard=unnamed
 set undofile
 set backspace=indent,eol,start
+set confirm
 
 "タブ、空白、改行の可視化
 set list
@@ -83,6 +84,8 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
+
+NeoBundle 'rking/ag.vim'
 
 " originalrepos on github
 NeoBundle 'Shougo/unite.vim'
@@ -183,6 +186,18 @@ let g:neocomplcache_force_omni_patterns.objcpp =
 let g:clang_complete_auto = 0
 let g:clang_auto_select = 0
 
+NeoBundle 'Shougo/vimfiler'
+let g:vimfiler_as_default_explorer=1
+
+nnoremap <C-e> :VimFilerCurrentDir<CR>
+inoremap <C-e> <ESC>:VimFilerCurrentDir<CR>
+
+nnoremap <C-x><C-e> :VimFiler -project<CR>
+inoremap <C-x><C-e> <ESC>:VimFiler -project<CR>
+
+let g:vimfiler_safe_mode_by_default = 0
+let g:vimfiler_as_default_explorer=1
+
 NeoBundle 'cocoa.vim'
 """ unite.vim
 " バッファ一覧
@@ -215,10 +230,11 @@ nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W
 nnoremap <silent> ,r  :<C-u>UniteResume search-buffer<CR>
 
 " unite grep に ag(The Silver Searcher) を使う
-if executable('ag')
-  let g:unite_source_grep_command = 'ag'
-  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+if executable('pt')
+  let g:unite_source_grep_command = 'pt'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor'
   let g:unite_source_grep_recursive_opt = ''
+  let g:unite_source_grep_encoding = 'utf-8'
 endif
 
 NeoBundle 'git://github.com/tokorom/clang_complete.git'
@@ -240,3 +256,12 @@ NeoBundle 'Shougo/vimproc.vim', {
             \     'unix' : 'gmake',
             \    },
             \ }
+
+" Qfreplace 使用
+NeoBundle "thinca/vim-qfreplace"
+
+" Vimを終了してもUndo
+if has('persistent_undo')
+  set undofile
+  set undodir=./.vimundo,~/.vim/undo
+endif
