@@ -265,3 +265,9 @@ if has('persistent_undo')
   set undofile
   set undodir=./.vimundo,~/.vim/undo
 endif
+
+:nnoremap <ESC><ESC> :nohlsearch<CR>
+vnoremap < <gv
+vnoremap > >gv
+
+NeoBundle 'tpope/vim-surround'
