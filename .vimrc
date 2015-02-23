@@ -271,3 +271,4 @@ vnoremap < <gv
 vnoremap > >gv
 
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'evidens/vim-twig'

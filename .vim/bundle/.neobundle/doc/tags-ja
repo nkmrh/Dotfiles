@@ -1,4 +1,5 @@
 !_TAG_FILE_ENCODING	utf-8	//
+:Qfreplace	qfreplace.jax	/*:Qfreplace*
 :VimShell	vimshell.jax	/*:VimShell*
 :VimShellCreate	vimshell.jax	/*:VimShellCreate*
 :VimShellExecute	vimshell.jax	/*:VimShellExecute*
@@ -101,6 +102,12 @@ i_<Plug>(vimshell_move_head)	vimshell.jax	/*i_<Plug>(vimshell_move_head)*
 i_<Plug>(vimshell_move_previous_window)	vimshell.jax	/*i_<Plug>(vimshell_move_previous_window)*
 i_<Plug>(vimshell_push_current_line)	vimshell.jax	/*i_<Plug>(vimshell_push_current_line)*
 i_<Plug>(vimshell_run_help)	vimshell.jax	/*i_<Plug>(vimshell_run_help)*
+qfreplace	qfreplace.jax	/*qfreplace*
+qfreplace-changelog	qfreplace.jax	/*qfreplace-changelog*
+qfreplace-command	qfreplace.jax	/*qfreplace-command*
+qfreplace-introduction	qfreplace.jax	/*qfreplace-introduction*
+qfreplace-usage	qfreplace.jax	/*qfreplace-usage*
+qfreplace.txt	qfreplace.jax	/*qfreplace.txt*
 v_<Plug>(vimshell_select_next_prompt)	vimshell.jax	/*v_<Plug>(vimshell_select_next_prompt)*
 v_<Plug>(vimshell_select_previous_prompt)	vimshell.jax	/*v_<Plug>(vimshell_select_previous_prompt)*
 vimshell#hook#add()	vimshell.jax	/*vimshell#hook#add()*
