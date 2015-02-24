@@ -49,7 +49,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH=$PATH:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -80,7 +80,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # PATH
-export PATH="/Users/hajime-nakamura/.cpad/bin:$PATH"
+export PATH=$PATH:/Users/hajime-nakamura/.cpad/bin:$PATH
+export PATH=$PATH:/$HOME/.rbenv/bin:$PATH
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 # Bundler:
 export BUNDLE_JOBS=3
 # Rbenv:
@@ -91,3 +95,4 @@ export CPAD_INITIALIZED=1
 autossh -M 60559 -f -C awsproxy.vpc ping -i 30 localhost
 
 [[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
+
