@@ -2,28 +2,16 @@ NeoBundleLock ag.vim f05f31352689be245611c893b37652110f27a2c5
 NeoBundleLock clang_complete 8e734335c354a27068e034253645a14fbef31d6a
 NeoBundleLock clang_complete-getopts-ios 7f15c776a2ed845b5d9f640b032037c3da93384c
 NeoBundleLock cocoa.vim 8ee2cc29a162e470fe90af195178c243f8565fea
-<<<<<<< HEAD
 NeoBundleLock ctrlp.vim ed172326a4a10c4dc6e5a6c6c990f1fe64452d81
 NeoBundleLock neobundle.vim 0c31437b58831efa20a9623e78be25a90df8c8c8
 NeoBundleLock neocomplcache d83bcbd0b142eb8de9d669ead26914cd7322a51c
 NeoBundleLock neosnippet-snippets 452e81888009c01a13aaecff2e18587655e68614
 NeoBundleLock neosnippet.vim 044c9cb8ca46a5e27eec37198990c26fe707b02a
-=======
-NeoBundleLock ctrlp.vim f8fd9793503b06b2b5f7efe372955322fc4727cd
-NeoBundleLock neobundle.vim 0c31437b58831efa20a9623e78be25a90df8c8c8
-NeoBundleLock neocomplcache d83bcbd0b142eb8de9d669ead26914cd7322a51c
-NeoBundleLock neosnippet-snippets 4b15c7312dbbd2afc5178fd0b7ac017e96d54e6d
-NeoBundleLock neosnippet.vim 811176b29b1a60a164c9878f8dcbe4a680ee32e5
->>>>>>> 023f856d5a398f12564b68ada14e9160eae024a8
 NeoBundleLock unite.vim a06d3ff1e192e949fd90cf4117e229c60d5c7783
 NeoBundleLock vim-colorschemes 81c6dd7ce3169e5ad9ba92422ba6e1ce5b074e36
 NeoBundleLock vim-fugitive 0095769029709b531d2505ee6ad9907dd9bd72a0
 NeoBundleLock vim-qfreplace 89e64ae24fb4b8e2402ba6d84971c06606f4adf4
 NeoBundleLock vim-surround ec579a50478758ee6cebe265cf536f9a2f6c4e34
-<<<<<<< HEAD
-=======
-NeoBundleLock vim-twig 69acd8d4386727affa345d39ea42d149771c2647
->>>>>>> 023f856d5a398f12564b68ada14e9160eae024a8
 NeoBundleLock vimfiler 51ed6a55d5efd1dde20f1fae03914ed0b417756a
 NeoBundleLock vimproc.vim 0f68bcd93399ecbcde3eaa4efd09107314c9bdee
 NeoBundleLock vimshell 3787e52766812d8b99a93ccdda57517bc2a0bab6
