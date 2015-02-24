@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/hajime-nakamura/Git/ios-cookpad'
+let g:netrw_dirhist_2='/Users/haz/git/Dotfiles/.vim'
+let g:netrw_dirhist_3='/Users/haz/git/Dotfiles/.vim/bundle'
