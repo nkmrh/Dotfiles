@@ -4,3 +4,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" 削除キーでyankしない
+nnoremap x "_x
+"nnoremap d "_d
+nnoremap D "_D
+
+:nnoremap <ESC><ESC> :nohlsearch<CR>

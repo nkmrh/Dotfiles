@@ -42,7 +42,7 @@ hi PMenuSbar ctermbg=4
 
 " 削除キーでyankしない
 nnoremap x "_x
-nnoremap d "_d
+"nnoremap d "_d
 nnoremap D "_D
 
 syntax enable

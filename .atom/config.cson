@@ -1,0 +1,13 @@
+"*":
+  "exception-reporting":
+    userId: "f624bb2f-8be9-079d-59f4-60f05fdf467d"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+    fontSize: 11
+  "autocomplete-plus": {}
+  linter: {}
+  term2:
+    colors: {}
