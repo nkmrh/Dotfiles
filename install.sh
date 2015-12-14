@@ -6,22 +6,22 @@ if ! $?; then
 fi
 
 which git
-if [! $?]; then
+if ! $?; then
   brew install git
 fi
 
 which vim
-if [! $?]; then
+if ! $?; then
   brew install vim
 fi
 
 which tmux
-if [! $?]; then
+if ! $?; then
   brew install tmux
 fi
 
 which reattach-to-user-namespace
-if [! $?]; then
+if ! $?; then
   brew install reattach-to-user-namespace
 fi
 
