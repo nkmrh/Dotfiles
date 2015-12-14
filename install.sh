@@ -1,7 +1,7 @@
 #!/bin/bash
 
 which brew
-if [! $?]; then
+if ! $?; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
