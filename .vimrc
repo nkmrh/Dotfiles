@@ -4,11 +4,11 @@ set fencs=utf-8
 set fileformats=unix,dos,mac
 set ic
 set hlsearch
-set tabstop=4
+set tabstop=2
 set expandtab
 set showmatch
 set autoindent
-set shiftwidth=4
+set shiftwidth=2
 set clipboard+=unnamed
 set backupdir=$HOME/vim_backup
 set undodir=backupdir
@@ -36,9 +36,9 @@ if has('syntax')
     call ZenkakuSpace()
 endif
 
-hi Pmenu ctermbg=4
-hi PmenuSel ctermbg=1
-hi PMenuSbar ctermbg=4
+hi Pmenu ctermbg=81
+hi PmenuSel ctermbg=255
+hi PMenuSbar ctermbg=170
 
 " 削除キーでyankしない
 nnoremap x "_x

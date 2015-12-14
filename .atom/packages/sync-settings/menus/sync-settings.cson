@@ -1,0 +1,13 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Syncronize Settings'
+      'submenu': [
+        { 'label': 'Upload', 'command': 'sync-settings:upload' }
+        { 'label': 'Download', 'command': 'sync-settings:download' }
+      ]
+    ]
+  }
+]
