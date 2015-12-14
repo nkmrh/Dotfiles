@@ -13,6 +13,6 @@ done
 
 ln -sf "$DOTPATH"/bin "$HOME"/bin
 
-mkdir .vim/bundle/
+mkdir -p .vim/bundle/
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim +NeoBundleInstall +qall
