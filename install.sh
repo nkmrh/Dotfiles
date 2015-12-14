@@ -9,6 +9,8 @@ do
     ln -sf "$DOTPATH"/"$f" "$HOME"/"$f"
 done
 
+ln -sf "$DOTPATH"/bin "$HOME"/bin
+
 cd .vim
 mkdir bundle/
 cd bundle/
