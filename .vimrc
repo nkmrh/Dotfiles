@@ -271,6 +271,12 @@ vnoremap > >gv
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'evidens/vim-twig'
 
+NeoBundle 'altercation/vim-colors-solarized'
+
 " Required:
 call neobundle#end()
+
+syntax enable
+set background=dark    "または light
+colorscheme solarized
 
