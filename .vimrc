@@ -186,9 +186,12 @@ let g:clang_auto_select = 0
 
 NeoBundle 'Shougo/vimfiler'
 let g:vimfiler_as_default_explorer=1
+let g:vimfiler_enable_auto_cd = 1
 
-nnoremap <C-e> :VimFilerCurrentDir<CR>
-inoremap <C-e> <ESC>:VimFilerCurrentDir<CR>
+"nnoremap <C-e> :VimFilerCurrentDir<CR>
+"inoremap <C-e> <ESC>:VimFilerCurrentDir<CR>
+nnoremap <C-e> :<C-u>VimFilerExplorer<CR>
+inoremap <C-e> <ESC>:<C-u>VimFilerExplorer<CR>
 
 nnoremap <C-x><C-e> :VimFiler -project<CR>
 inoremap <C-x><C-e> <ESC>:VimFiler -project<CR>
