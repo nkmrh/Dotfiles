@@ -2,6 +2,8 @@
 
 DOTPATH=~/.dotfiles
 
+git clone git@github.com:nkmrh/dotfiles.git ~/.dotfiles
+
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
@@ -11,9 +13,6 @@ done
 
 ln -sf "$DOTPATH"/bin "$HOME"/bin
 
-cd .vim
-mkdir bundle/
-cd bundle/
+mkdir .vim/bundle/
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim +NeoBundleInstall +qall
-cd ~
