@@ -8,21 +8,15 @@ if [! type "git"]; then
   brew install git
 fi
 
-if type "vim" > /dev/null 2>&1
-then
-else
+if [! type "vim"]; then
   brew install vim
 fi
 
-if type "tmux" > /dev/null 2>&1
-then
-else
+if [! type "tmux"]; then
   brew install tmux
 fi
 
-if type "reattach-to-user-namespace" > /dev/null 2>&1
-then
-else
+if [! type "reattach-to-user-namespace"]; then
   brew install reattach-to-user-namespace
 fi
 
