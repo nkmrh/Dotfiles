@@ -74,8 +74,6 @@ NeoBundle 'flazz/vim-colorschemes'
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
-" Required:
-call neobundle#end()
 
 " Required:
 filetype plugin indent on
@@ -237,8 +235,8 @@ if executable('pt')
   let g:unite_source_grep_encoding = 'utf-8'
 endif
 
-NeoBundle 'git://github.com/tokorom/clang_complete.git'
-NeoBundle 'git://github.com/tokorom/clang_complete-getopts-ios.git'
+NeoBundle 'https://github.com/tokorom/clang_complete.git'
+NeoBundle 'https://github.com/tokorom/clang_complete-getopts-ios.git'
 let g:clang_complete_getopts_ios_default_options = '-fblocks -fobjc-arc -D __IPHONE_OS_VERSION_MIN_REQUIRED=40300'
 let g:clang_complete_getopts_ios_sdk_directory = '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk'
 let g:clang_complete_getopts_ios_ignore_directories = ["^\.git", "\.xcodeproj"]
@@ -272,4 +270,7 @@ vnoremap > >gv
 
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'evidens/vim-twig'
+
+" Required:
+call neobundle#end()
 
