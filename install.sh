@@ -1,22 +1,27 @@
 #!/bin/bash
 
-if [! type "brew"]; then
+which brew
+if [! $?]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-if [! type "git"]; then
+which git
+if [! $?]; then
   brew install git
 fi
 
-if [! type "vim"]; then
+which vim
+if [! $?]; then
   brew install vim
 fi
 
-if [! type "tmux"]; then
+which tmux
+if [! $?]; then
   brew install tmux
 fi
 
-if [! type "reattach-to-user-namespace"]; then
+which reattach-to-user-namespace
+if [! $?]; then
   brew install reattach-to-user-namespace
 fi
 
