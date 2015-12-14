@@ -2,31 +2,31 @@
 
 if type "brew" > /dev/null 2>&1
 then
-elif
+else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 if type "git" > /dev/null 2>&1
 then
-elif
+else
   brew install git
 fi
 
 if type "vim" > /dev/null 2>&1
 then
-elif
+else
   brew install vim
 fi
 
 if type "tmux" > /dev/null 2>&1
 then
-elif
+else
   brew install tmux
 fi
 
 if type "reattach-to-user-namespace" > /dev/null 2>&1
 then
-elif
+else
   brew install reattach-to-user-namespace
 fi
 
