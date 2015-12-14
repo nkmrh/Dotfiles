@@ -24,6 +24,7 @@ DOTPATH=~/.dotfiles
 
 git clone git@github.com:nkmrh/dotfiles.git $DOTPATH
 
+
 cd $DOTPATH
 
 for f in .??*
