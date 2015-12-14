@@ -1,5 +1,35 @@
 #!/bin/bash
 
+if type "brew" > /dev/null 2>&1
+then
+elif
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+if type "git" > /dev/null 2>&1
+then
+elif
+  brew install git
+fi
+
+if type "vim" > /dev/null 2>&1
+then
+elif
+  brew install vim
+fi
+
+if type "tmux" > /dev/null 2>&1
+then
+elif
+  brew install tmux
+fi
+
+if type "reattach-to-user-namespace" > /dev/null 2>&1
+then
+elif
+  brew install reattach-to-user-namespace
+fi
+
 DOTPATH=~/.dotfiles
 
 git clone git@github.com:nkmrh/dotfiles.git $DOTPATH
