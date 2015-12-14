@@ -7,6 +7,7 @@
 'ctrlp-wildignore'	ctrlp.txt	/*'ctrlp-wildignore'*
 'g:ctrlp_abbrev'	ctrlp.txt	/*'g:ctrlp_abbrev'*
 'g:ctrlp_arg_map'	ctrlp.txt	/*'g:ctrlp_arg_map'*
+'g:ctrlp_brief_prompt'	ctrlp.txt	/*'g:ctrlp_brief_prompt'*
 'g:ctrlp_buffer_func'	ctrlp.txt	/*'g:ctrlp_buffer_func'*
 'g:ctrlp_buftag_ctags_bin'	ctrlp.txt	/*'g:ctrlp_buftag_ctags_bin'*
 'g:ctrlp_buftag_systemenc'	ctrlp.txt	/*'g:ctrlp_buftag_systemenc'*
@@ -20,6 +21,7 @@
 'g:ctrlp_follow_symlinks'	ctrlp.txt	/*'g:ctrlp_follow_symlinks'*
 'g:ctrlp_key_loop'	ctrlp.txt	/*'g:ctrlp_key_loop'*
 'g:ctrlp_lazy_update'	ctrlp.txt	/*'g:ctrlp_lazy_update'*
+'g:ctrlp_line_prefix'	ctrlp.txt	/*'g:ctrlp_line_prefix'*
 'g:ctrlp_map'	ctrlp.txt	/*'g:ctrlp_map'*
 'g:ctrlp_match_func'	ctrlp.txt	/*'g:ctrlp_match_func'*
 'g:ctrlp_match_window'	ctrlp.txt	/*'g:ctrlp_match_window'*
@@ -29,14 +31,15 @@
 'g:ctrlp_mruf_case_sensitive'	ctrlp.txt	/*'g:ctrlp_mruf_case_sensitive'*
 'g:ctrlp_mruf_default_order'	ctrlp.txt	/*'g:ctrlp_mruf_default_order'*
 'g:ctrlp_mruf_exclude'	ctrlp.txt	/*'g:ctrlp_mruf_exclude'*
+'g:ctrlp_mruf_exclude_nomod'	ctrlp.txt	/*'g:ctrlp_mruf_exclude_nomod'*
 'g:ctrlp_mruf_include'	ctrlp.txt	/*'g:ctrlp_mruf_include'*
 'g:ctrlp_mruf_max'	ctrlp.txt	/*'g:ctrlp_mruf_max'*
 'g:ctrlp_mruf_relative'	ctrlp.txt	/*'g:ctrlp_mruf_relative'*
 'g:ctrlp_mruf_save_on_update'	ctrlp.txt	/*'g:ctrlp_mruf_save_on_update'*
-'g:ctrlp_mruf_tilde_homedir'	ctrlp.txt	/*'g:ctrlp_mruf_tilde_homedir'*
 'g:ctrlp_open_func'	ctrlp.txt	/*'g:ctrlp_open_func'*
 'g:ctrlp_open_multiple_files'	ctrlp.txt	/*'g:ctrlp_open_multiple_files'*
 'g:ctrlp_open_new_file'	ctrlp.txt	/*'g:ctrlp_open_new_file'*
+'g:ctrlp_open_single_match'	ctrlp.txt	/*'g:ctrlp_open_single_match'*
 'g:ctrlp_prompt_mappings'	ctrlp.txt	/*'g:ctrlp_prompt_mappings'*
 'g:ctrlp_regexp'	ctrlp.txt	/*'g:ctrlp_regexp'*
 'g:ctrlp_reuse_window'	ctrlp.txt	/*'g:ctrlp_reuse_window'*
@@ -45,6 +48,7 @@
 'g:ctrlp_status_func'	ctrlp.txt	/*'g:ctrlp_status_func'*
 'g:ctrlp_switch_buffer'	ctrlp.txt	/*'g:ctrlp_switch_buffer'*
 'g:ctrlp_tabpage_position'	ctrlp.txt	/*'g:ctrlp_tabpage_position'*
+'g:ctrlp_tilde_homedir'	ctrlp.txt	/*'g:ctrlp_tilde_homedir'*
 'g:ctrlp_use_caching'	ctrlp.txt	/*'g:ctrlp_use_caching'*
 'g:ctrlp_user_command'	ctrlp.txt	/*'g:ctrlp_user_command'*
 'g:ctrlp_working_path_mode'	ctrlp.txt	/*'g:ctrlp_working_path_mode'*
@@ -154,6 +158,8 @@ ClearCtrlPCache	ctrlp.txt	/*ClearCtrlPCache*
 ControlP	ctrlp.txt	/*ControlP*
 CtrlP	ctrlp.txt	/*CtrlP*
 ResetCtrlP	ctrlp.txt	/*ResetCtrlP*
+b:neosnippet_disable_snippet_triggers	neosnippet.txt	/*b:neosnippet_disable_snippet_triggers*
+ctrlp-autoignore-extension	ctrlp.txt	/*ctrlp-autoignore-extension*
 ctrlp-changelog	ctrlp.txt	/*ctrlp-changelog*
 ctrlp-commands	ctrlp.txt	/*ctrlp-commands*
 ctrlp-contents	ctrlp.txt	/*ctrlp-contents*
@@ -261,7 +267,8 @@ g:neobundle_rm_command	neobundle.txt	/*g:neobundle_rm_command*
 g:neosnippet#data_directory	neosnippet.txt	/*g:neosnippet#data_directory*
 g:neosnippet#disable_runtime_snippets	neosnippet.txt	/*g:neosnippet#disable_runtime_snippets*
 g:neosnippet#disable_select_mode_mappings	neosnippet.txt	/*g:neosnippet#disable_select_mode_mappings*
-g:neosnippet#enable_preview	neosnippet.txt	/*g:neosnippet#enable_preview*
+g:neosnippet#enable_complete_done	neosnippet.txt	/*g:neosnippet#enable_complete_done*
+g:neosnippet#enable_conceal_markers	neosnippet.txt	/*g:neosnippet#enable_conceal_markers*
 g:neosnippet#enable_snipmate_compatibility	neosnippet.txt	/*g:neosnippet#enable_snipmate_compatibility*
 g:neosnippet#expand_word_boundary	neosnippet.txt	/*g:neosnippet#expand_word_boundary*
 g:neosnippet#scope_aliases	neosnippet.txt	/*g:neosnippet#scope_aliases*
@@ -402,6 +409,8 @@ neobundle-usage	neobundle.txt	/*neobundle-usage*
 neobundle-variables	neobundle.txt	/*neobundle-variables*
 neobundle.txt	neobundle.txt	/*neobundle.txt*
 neosnippet	neosnippet.txt	/*neosnippet*
+neosnippet#anonymous()	neosnippet.txt	/*neosnippet#anonymous()*
+neosnippet#expand()	neosnippet.txt	/*neosnippet#expand()*
 neosnippet#expandable()	neosnippet.txt	/*neosnippet#expandable()*
 neosnippet#expandable_or_jumpable()	neosnippet.txt	/*neosnippet#expandable_or_jumpable()*
 neosnippet#get_snippets_directory()	neosnippet.txt	/*neosnippet#get_snippets_directory()*
@@ -432,6 +441,7 @@ s_<Plug>(neosnippet_expand)	neosnippet.txt	/*s_<Plug>(neosnippet_expand)*
 s_<Plug>(neosnippet_expand_or_jump)	neosnippet.txt	/*s_<Plug>(neosnippet_expand_or_jump)*
 s_<Plug>(neosnippet_jump)	neosnippet.txt	/*s_<Plug>(neosnippet_jump)*
 s_<Plug>(neosnippet_jump_or_expand)	neosnippet.txt	/*s_<Plug>(neosnippet_jump_or_expand)*
+string-match	ctrlp.txt	/*string-match*
 unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*

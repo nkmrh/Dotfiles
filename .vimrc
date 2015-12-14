@@ -58,7 +58,7 @@ if has('vim_starting')
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -258,7 +258,7 @@ NeoBundle 'Shougo/vimproc.vim', {
             \ }
 
 " Qfreplace 使用
-NeoBundle "thinca/vim-qfreplace"
+NeoBundle 'thinca/vim-qfreplace'
 
 " Vimを終了してもUndo
 if has('persistent_undo')
