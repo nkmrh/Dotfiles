@@ -4,9 +4,7 @@ if [! type "brew"]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-if type "git" > /dev/null 2>&1
-then
-else
+if [! type "git"]; then
   brew install git
 fi
 
