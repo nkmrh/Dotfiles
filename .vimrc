@@ -276,6 +276,8 @@ NeoBundle 'evidens/vim-twig'
 
 NeoBundle 'altercation/vim-colors-solarized'
 
+NeoBundle 'tpope/vim-fugitive'
+
 " Required:
 call neobundle#end()
 
