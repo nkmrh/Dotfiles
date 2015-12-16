@@ -100,7 +100,7 @@ autossh -M 60559 -f -C awsproxy.vpc ping -i 30 localhost
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-
+export VIMRUNTIME=/opt/brew/Cellar/vim/7.4.488/share/vim/vim74
 
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
