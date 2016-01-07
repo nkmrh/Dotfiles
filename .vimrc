@@ -87,6 +87,7 @@ NeoBundle 'rking/ag.vim'
 
 " originalrepos on github
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 
 "" neocomplcache
 NeoBundle 'Shougo/neocomplcache'
